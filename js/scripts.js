@@ -26,7 +26,7 @@ function numberTest() {
 function doTheMath() {
 	$.each($(".number"), function() {
 		if (!($(this).text() % inputNum === 0)) {
-			$(this).hide();
+			$(this).fadeOut("slow");
 		}
 	})
 }
