@@ -16,17 +16,18 @@ function numberTest() {
 		var errMsg = $("<div></div>").text(errTxt).addClass("error");
 		$("#container").prepend(errMsg);
 	} else {
-		$(".error").hide();
-		$(".number").show();
+		$(".error, .number").hide();
+		//$(".number").hide();
 		doTheMath();
 	}
 }
 
 //divide input number into divs
 function doTheMath() {
+	$(".number").fadeOut("slow");
 	$.each($(".number"), function() {
-		if (!($(this).text() % inputNum === 0)) {
-			$(this).fadeOut("slow");
+		if ($(this).text() % inputNum === 0) {
+			$(this).fadeIn("slow");
 		}
 	})
 }

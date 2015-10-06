@@ -1,9 +1,31 @@
+html {
+	background-color: rgba(198, 25, 0, 0.5);
+}
+
+h2 {
+	padding: 0.3em;
+	text-align: center;
+}
+
+#userinput {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#divider, .number {
+	border: rgba(200, 255, 100, 1) 3px solid;
+}
+
+#divider {
+	font-size: 1em;
+	padding: 0.3em;
+}
+
 #container {
-	padding: 2em 2em;
+	padding: 2em;
 }
 
 .number {
-	border: black 1px solid;
 	display: inline-block;
 	padding: 1em;
 	margin: 0.5em;
